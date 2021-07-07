@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    
 package ec.edu.intsuperior.modelo;
 
 /**
@@ -16,28 +12,32 @@ public class Punto {
     public Punto(){
         
     }
-    public Punto(int x, int y){
-        this.x= x;
-        this.y= y;
-          
+
+    public Punto(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
     public void setX(int x){
         this.x=x;
+                
+    }
 
-           }
-    public int getX(int x){
+    public int getX() {
         return x;
     }
-    public void setY(int y){
-        this.y=y;
+
+    public void setY(int y) {
+        this.y = y;
     }
-    public int getY(int y){
+
+    public int getY() {
         return y;
     }
-   public double distanciaEntreDosPuntos(int x1, int x2,int y1, int y2){
+     public double distanciaEntreDosPuntos(int x1, int x2,int y1, int y2){
        double d;
       d=Math.sqrt((Math.pow(((double)(y2)-(double)(y2)),2)))+ (Math.pow(((double)(x2)-(double)(x1)),2));
-   
+        return d;
+     }
 }
    
 
